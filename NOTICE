@@ -1,0 +1,14 @@
+Aceris
+Copyright (c) 2026 Aceris contributors
+
+Aceris is released under the MIT License. See LICENSE.
+
+This repository vendors the official toml-lang/toml-test fixture repository under
+third_party/toml-test for parser conformance testing.
+
+toml-test is maintained by the TOML community and is distributed under the MIT License.
+Its license file is preserved at:
+
+  third_party/toml-test/LICENSE
+
+Project: https://github.com/toml-lang/toml-test

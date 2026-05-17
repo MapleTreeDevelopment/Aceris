@@ -1,0 +1,20 @@
+title = "Aceris example"
+
+[server]
+host = "127.0.0.1"
+port = 8080
+enabled = true
+allowed_ips = ["127.0.0.1", "10.0.0.1"]
+
+[database]
+url = "postgres://localhost/app"
+pool.max = 20
+pool.idle_timeout_seconds = 30
+
+[[plugins]]
+name = "audit-log"
+enabled = true
+
+[[plugins]]
+name = "metrics"
+enabled = false

@@ -1,0 +1,36 @@
+.gradle/
+build/
+out/
+target/
+*.class
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Local secrets and release credentials
+.env
+.env.*
+local.properties
+gradle.properties
+*.gpg
+*.pgp
+*.kbx
+secring.gpg
+private.key
+*.pem
+*.key

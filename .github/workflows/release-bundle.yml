@@ -1,0 +1,33 @@
+name: Release Bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release version, for example 0.1.0
+        required: true
+        type: string
+      maven_group:
+        description: Verified Maven Central namespace/groupId
+        required: true
+        default: dev.mapletree
+        type: string
+
+jobs:
+  central-bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Build signed Central bundle
+        env:
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+          SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+        run: ./gradlew clean check centralBundle -Pversion=${{ inputs.version }} -PmavenGroup=${{ inputs.maven_group }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aceris-${{ inputs.version }}-central-bundle
+          path: build/distributions/aceris-${{ inputs.version }}-central-bundle.zip
