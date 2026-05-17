@@ -61,7 +61,6 @@ The conformance suite is intentionally incremental: `TomlConformanceTest` runs a
 ## Highlights
 
 - Dependency-free JVM core
-- Java-first API with Kotlin-friendly usage
 - Parser and interpreter layers with AST access
 - Typed getters for primitives, numbers, strings, collections, temporal values, URLs, URIs, and enums
 - Object mapping for records, beans, private fields, and immutable constructor classes
