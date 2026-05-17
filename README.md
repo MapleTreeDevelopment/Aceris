@@ -1,12 +1,10 @@
+<div align="center">
+
 # Aceris
 
-<p align="center">
-  <img src="docs/assets/aceris_sub.png" alt="Aceris - TOML Toolkit for Java and Kotlin" width="760">
-</p>
+**TOML Toolkit for Java & Kotlin**
 
-<p align="center">
-  <strong>A dependency-free TOML toolkit for Java and Kotlin.</strong>
-</p>
+</div>
 
 <p align="center">
   <a href="https://github.com/MapleTreeDevelopment/aceris/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/MapleTreeDevelopment/aceris/actions/workflows/ci.yml/badge.svg"></a>
