@@ -385,7 +385,7 @@ The official [`toml-lang/toml-test`](https://github.com/toml-lang/toml-test) fix
 - strings
 - temporal validation
 
-The fixture set is intentionally green and should be expanded as parser support grows.
+The fixture set is intentionally green and will be expanded as parser support grows.
 
 </details>
 
